@@ -1,6 +1,6 @@
 .header {
     height: 66px;
-    background-color: #3C2C7B;
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
     border: 3px solid black;
@@ -80,9 +80,9 @@
 }
 
 .footer-container {
-  margin-top: 119px;
+  margin-top: 89px;
   height: 46px;
-  background-color: #3C2C7B;
+  background-color: #ADD8E6;
   margin-bottom: 0px;
   border: 3px solid black;
   text-align: center;

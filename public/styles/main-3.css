@@ -25,13 +25,10 @@ body {
  
 }
 
-input {
-  background-color: purple;
-  color: black;
-}
+
 
 #jumlahProduk {
-  background-color: navy;
+  background-color: pink;
   color: white;
   border-radius: 20px;
   width: 100%;
@@ -73,6 +70,7 @@ input {
   scroll-snap-align: start;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 20px 20px lightblue;
   overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
@@ -127,15 +125,17 @@ input {
 }
 
 .swiper-pagination{
-
   height: 90px;
+  
 }
+
 .product-card img {
   height: 280px !important;
   width: 260px !important;
 }
 form {
   display: flex;
+  margin-bottom: 30px;
 }
 #button-atas {
   background-color: lightpink;
@@ -149,10 +149,14 @@ form {
 }
 
 #button-atas:hover {
-  background-color: lightblue;
+  background-color: lightcoral;
 }
 
 #button-atas:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
+}
+swiper-button-next {
+  background-color: #422800 !important;
+  color: #422800 !important;
 }
