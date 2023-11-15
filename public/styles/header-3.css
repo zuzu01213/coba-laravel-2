@@ -41,7 +41,7 @@
   }
   
   .search-bar {
-    background-color: lightpink;
+    background-color: white;
     height: 24px;
     padding-left: 10px;
     font-size: 16px;
@@ -60,7 +60,8 @@
   
   .search-icon {
     margin-top: 6px;
-    height: 36px;
+    height: 50px;
+
     margin-left: 30px;
   }
   
@@ -75,11 +76,11 @@
     position: absolute;
     margin: 0px;
     margin-left: 680px;
-    color: lightcoral;
+    color: lavender;
 }
 
 .footer-container {
-  margin-top: 79px;
+  margin-top: 119px;
   height: 46px;
   background-color: #3C2C7B;
   margin-bottom: 0px;
@@ -88,5 +89,8 @@
 
 }
 .strips-icon{
-  height: 44px;
+  height: 34px;
   }
+  
+  
+  

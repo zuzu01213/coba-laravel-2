@@ -26,7 +26,7 @@
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="https://localhost">
             <a href="https://youtu.be/dQw4w9WgXcQ">
-                <img class="search-icon" src="search-3.png">
+                <img class="search-icon" src="images/search-3.png">
             </a>
         </div>
     </header>
@@ -35,7 +35,7 @@
         <div class="generate-form">
             <form method="get">
                 <input type="number" name="jumlahProduk" id="jumlahProduk" min="1" value="1" class="form-control mr-3">
-                <button type="submit" name="generateButton" class="btn btn-primary">Generate Product</button>
+                <button type="submit" name="generateButton"  id="button-atas">Generate Product</button>
             </form>
         </div>
 
@@ -43,26 +43,24 @@
             <div class="slide-content swiper-container">
                 <div class="swiper-wrapper">
                     <?php
-                    if (isset($_GET['generateButton'])) {
-                        $jumlahProduk = isset($_GET['jumlahProduk']) ? intval($_GET['jumlahProduk']) : 1;
-                        $productImages = ['produk-1.png', 'produk-2.png', 'produk-3.png', 'produk-4.png', 'produk-5.png', 'produk-6.png'];
+                    $jumlahProduk = isset($_GET['jumlahProduk']) ? intval($_GET['jumlahProduk']) : 1;
+                    $productImages = ['produk-1.png', 'produk-2.png', 'produk-3.png', 'produk-4.png', 'produk-5.png', 'produk-6.png'];
 
-                        for ($i = 1; $i <= $jumlahProduk; $i++) {
-                            $imageIndex = ($i - 1) % count($productImages);
-                            $imageName = $productImages[$imageIndex];
+                    for ($i = 1; $i <= $jumlahProduk; $i++) {
+                        $imageIndex = ($i - 1) % count($productImages);
+                        $imageName = $productImages[$imageIndex];
 
-                            $imagePath = asset('images/' . $imageName);
-                            echo '
-                                <div class="swiper-slide product-card">
-                                    <img src="' . $imagePath . '" alt="Produk ' . $i . '">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Produk ' . $i . '</h5>
-                                        <p class="card-text">Deskripsi produk ' . $i . '</p>
-                                        <a href="#" class="btn btn-primary">Buy Product</a>
-                                    </div>
+                        $imagePath = asset('images/' . $imageName);
+                        echo '
+                            <div class="swiper-slide product-card">
+                                <img src="' . $imagePath . '" alt="Produk ' . $i . '">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produk ' . $i . '</h5>
+                                    <p class="card-text">Deskripsi produk ' . $i . '</p>
+                                    <a href="#" class="btn btn-primary">Buy Product</a>
                                 </div>
-                            ';
-                        }
+                            </div>
+                        ';
                     }
                     ?>
                 </div>
@@ -74,7 +72,7 @@
     </div>
 
     <footer class="footer-container">
-        <img class="strips-icon" src="produk-6.png">
+        <img class="strips-icon" src="images/strips-3.png">
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -85,7 +83,7 @@
         document.addEventListener('DOMContentLoaded', function () {
         var swiper = new Swiper(".swiper-container", {
             slidesPerView: 3,
-            spaceBetween: 25,
+            spaceBetween: 50,
             loop: false,
             centerSlide: true,
             fade: true,
