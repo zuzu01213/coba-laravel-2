@@ -51,9 +51,7 @@
                             $imageIndex = ($i - 1) % count($productImages);
                             $imageName = $productImages[$imageIndex];
 
-                            // Get the URL path to the "public/images" folder
                             $imagePath = asset('images/' . $imageName);
-
                             echo '
                                 <div class="swiper-slide product-card">
                                     <img src="' . $imagePath . '" alt="Produk ' . $i . '">
