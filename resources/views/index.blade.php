@@ -15,12 +15,12 @@
         <p class="page">Simple Product Generator</p>
         <div class="left-section">
             <a href="/2">
-                <img class="left-arrow" src="images/left.png">
+                <img class="left-arrow" src="images/left-3.png">
             </a>
             <a href="/1">
-                <img class="right-arrow" src="images/right.png">
+                <img class="right-arrow" src="images/right-3.png">
             </a>
-            <img class="cross" src="images/cross.png">
+            <img class="cross" src="images/cross-3.png">
             <img class="home-img" src="images/home-3.png">     
         </div>
         <div class="middle-section">
