@@ -26,7 +26,7 @@
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="https://localhost">
             <a href="https://youtu.be/dQw4w9WgXcQ">
-                <img class="search-icon" src="produk-5.png">
+                <img class="search-icon" src="search-3.png">
             </a>
         </div>
     </header>
