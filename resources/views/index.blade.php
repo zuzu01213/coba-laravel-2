@@ -20,7 +20,7 @@
             <a href="/1">
                 <img class="right-arrow" src="images/right-3.png">
             </a>
-            <img class="cross" src="images/cross-3.png">
+            <img class="cross" src="images/cross-4.png">
             <img class="home-img" src="images/home-3.png">     
         </div>
         <div class="middle-section">
