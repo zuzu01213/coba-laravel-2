@@ -41,6 +41,7 @@
   }
   
   .search-bar {
+    background-color: lightpink;
     height: 24px;
     padding-left: 10px;
     font-size: 16px;
@@ -74,6 +75,7 @@
     position: absolute;
     margin: 0px;
     margin-left: 680px;
+    color: lightcoral;
 }
 
 .footer-container {

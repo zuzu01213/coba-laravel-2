@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: lightpink;
   color: #4c362b;
   font-family: 'Arial', sans-serif;
   overflow-y: hidden;
@@ -19,10 +19,10 @@ body {
 
 .card-body {
   background-color: #71278F;
-  margin-top: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
+ 
 }
 
 input {
@@ -32,7 +32,7 @@ input {
 
 #jumlahProduk {
   background-color: #3C2C7B;
-  color: black;
+  color: white;
   border-radius: 20px;
   width: 100%;
   margin-bottom: 0;
@@ -89,22 +89,26 @@ input {
 .card-title {
   margin: 0;
   font-size: 18px;
+  color: lightcoral;
+  font: arial, helvetica;
 }
 
 .card-text {
   font-size: 14px;
+  color: lightblue;
 }
 
 .btn-primary {
-  background-color: black;
+  background-color: navy;
   border: none;
-  color: white;
+  color: lightcyan;
   border-radius: 5px;
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   margin-top: 10px;
+  
 }
 
 .strips-icon {
@@ -120,5 +124,11 @@ input {
   margin-top: 25px;
 }
 
+.swiper-pagination{
 
-
+  height: 90px;
+}
+.product-card img {
+  height: 280px !important;
+  width: 260px !important;
+}

@@ -21,7 +21,7 @@
                 <img class="right-arrow" src="images/right.png">
             </a>
             <img class="cross" src="images/cross.png">
-            <img class="home-img" src="images/home.png">     
+            <img class="home-img" src="images/home-3.png">     
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="https://localhost">
@@ -83,35 +83,37 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper(".swiper-container", {
-                slidesPerView: 3,
-                spaceBetween: 25,
-                loop: true,
-                centerSlide: true,
-                fade: true,
-                grabCursor: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: false,
+            centerSlide: true,
+            fade: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
                 },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                520: {
+                    slidesPerView: 2,
                 },
-                breakpoints: {
-                    0: {
-                        slidesPerView: 1,
-                    },
-                    520: {
-                        slidesPerView: 2,
-                    },
-                    950: {
-                        slidesPerView: 3,
-                    },
+                950: {
+                    slidesPerView: 3,
                 },
-            });
+            },
+            // Enable mousewheel control
+            mousewheel: true,
         });
+    });
     </script>
 </body>
 </html>
