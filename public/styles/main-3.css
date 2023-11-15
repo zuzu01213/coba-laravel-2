@@ -1,0 +1,155 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body styles */
+body {
+  background-color: #71278F;
+  color: #4c362b;
+  font-family: 'Arial', sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Container styles */
+.container {
+  margin: 60px;
+}
+
+/* Card body styles */
+.card-body {
+  background-color: #71278F;
+  margin-top: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+
+
+
+/* Input styles */
+input {
+  background-color: purple;
+  color: black;
+}
+
+#jumlahProduk {
+  background-color: #3C2C7B;
+  color: black;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  border: black;
+  padding: 10px;
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: white;
+  font-weight: lighter;
+}
+
+/* Container body styles */
+#container-body {
+  box-shadow: 0px 4px 40px black;
+}
+
+/* Product container styles */
+#productContainer {
+  display: flex;
+  width: fit-content;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: -20px; /* Hide the default scrollbar */
+  padding-bottom: 20px; /* Add some space for the custom scrollbar */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #ddd transparent; /* Color for Firefox scrollbar */
+  white-space: nowrap; /* Prevent line breaks */
+  transition: scroll 0.5s ease-in-out;
+  margin-right: 1000px;
+  padding: 20px;
+}
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+#productContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+#productContainer::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+/* Product card styles */
+.product-card {
+  width: 650px;
+  height: 400px;  
+  margin-right: 20px;
+  margin-left: 10px;
+  scroll-snap-align: start;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  height: 250px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #b0724a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.strips-icon {
+  width: 30px;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+  .product-card {
+      width: 200px;
+      height: 300px;
+      margin-right: 15px;
+  }
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.swiper-slide, .product-card {
+  width: 253px !important;
+  margin-top: 25px;
+}
+
+
+
