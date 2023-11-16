@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('styles/main-3.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/header-3.css') }}">
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <title>Produk Display</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
                     <?php
                     $jumlahProduk = isset($_GET['jumlahProduk']) ? intval($_GET['jumlahProduk']) : 1;
                     $productImages = ['produk-1.png', 'produk-2.png', 'produk-3.png', 'produk-4.png', 'produk-5.png', 'produk-6.png'];
-
+                    
                     for ($i = 1; $i <= $jumlahProduk; $i++) {
                         $imageIndex = ($i - 1) % count($productImages);
                         $imageName = $productImages[$imageIndex];
@@ -112,6 +112,9 @@
             mousewheel: true,
         });
     });
+    
     </script>
+    
 </body>
 </html>
+    
