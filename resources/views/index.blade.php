@@ -43,7 +43,7 @@
             <div class="slide-content swiper-container">
                 <div class="swiper-wrapper">
                     <?php
-                    $jumlahProduk = isset($_GET['jumlahProduk']) ? intval($_GET['jumlahProduk']) : 1;
+                    $jumlahProduk = isset($_GET['jumlahProduk']) ? intval($_GET['jumlahProduk']) : 10;
                     $productImages = ['produk-1.png', 'produk-2.png', 'produk-3.png', 'produk-4.png', 'produk-5.png', 'produk-6.png'];
                     
                     for ($i = 1; $i <= $jumlahProduk; $i++) {
@@ -108,7 +108,7 @@
                     slidesPerView: 3,
                 },
             },
-            // Enable mousewheel control
+            
             mousewheel: true,
         });
     });
